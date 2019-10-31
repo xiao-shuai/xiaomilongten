@@ -128,13 +128,13 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.huanlesw"
+        applicationId "com.hongtaiy"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 5
         versionName "1.5.0"
         manifestPlaceholders = [
-                  JPUSH_APPKEY: "d66e4ce8f09c8b5780d1b20a",        //在此替换你的APPKey
+                  JPUSH_APPKEY: "515d80f8de16a5fdb4b93189",        //在此替换你的APPKey
                   JPUSH_CHANNEL: "default"        //在此替换你的channel
           ]
     }
