@@ -127,7 +127,9 @@ class Me extends Component{
                  return(
                      <TouchableOpacity key={m} style={{width:'100%',padding:15,
                      backgroundColor:'white',marginTop:m==0?20:5,}} onPress={()=>{
-                        //  m==1?this.clearCache():this.props.navigation.navigate(i.itempagee)
+                         m==1?
+                         null:
+                         this.props.navigation.navigate(i.itempagee)
                      }}>
                           <View style={{flexDirection:'row',alignItems:'center',justifyContent:'space-between'}}>
                          <Text style={{fontSize:yangs.wd*.05,fontWeight:'500',color:yangs.themeColor}}>{i.n}</Text>
