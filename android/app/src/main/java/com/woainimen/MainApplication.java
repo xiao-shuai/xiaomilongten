@@ -1,4 +1,4 @@
-package com.hongtaiy;
+package com.vivo.jintaiyangapp;
 
 import android.app.Application;
 import android.util.Log;

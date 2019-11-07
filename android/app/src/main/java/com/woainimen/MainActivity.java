@@ -1,4 +1,4 @@
-package com.hongtaiy;
+package com.vivo.jintaiyangapp;
 
 import com.facebook.react.ReactActivity;
 import android.os.Bundle; 
