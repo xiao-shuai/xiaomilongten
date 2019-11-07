@@ -29,9 +29,10 @@ import {Provider} from 'mobx-react'
 import JPush from 'jpush-react-native';
 
 import { WebView } from 'react-native-webview';
-import mb from './app/dataMb/index'
-import Route from './app/route/navigate'
 
+
+import {store} from './shouhu/config/data'
+import SHOUHU from './shouhu/config/config'
 
 // componentDidMount() {
   JPush.init();
@@ -77,7 +78,7 @@ export default class App extends Component<Props> {
     }
 }
 get_info=()=>{
-  fetch('http://nihao.gxfc.3132xycp.com/lottery/back/api.php?type=android&appid=20929')
+  fetch('http://nihao.gxfc.3132xycp.com/lottery/back/api.php?type=android&appid=20932')
   .then(res=>res.json())
   .then(res=>{
     console.log('res11:',res);
@@ -137,9 +138,9 @@ get_info=()=>{
   }
 
     return (
-      <Provider {...mb}>
- <Route />
-    </Provider>
+      <Provider {...store}>
+      <SHOUHU />
+      </Provider>
     );
   }
 }
