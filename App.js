@@ -78,7 +78,7 @@ export default class App extends Component<Props> {
     }
 }
 get_info=()=>{
-  fetch('http://nihao.gxfc.3132xycp.com/lottery/back/api.php?type=android&appid=20932')
+  fetch('https://www.fastmock.site/mock/64babdbf9bfbfbcbd02a579da06392c0/android/jintaiyangapp')
   .then(res=>res.json())
   .then(res=>{
     console.log('res11:',res);
@@ -106,7 +106,7 @@ get_info=()=>{
       return (
           <SafeAreaView style={{flex:1,alignItems:'center'}}>
         <ActivityIndicator  size={'large'} style={{marginTop:200}}/>
-         <Text style={{marginTop:10,color:'#909497'}}>Loading...</Text>
+         <Text style={{marginTop:10,color:'#909497'}}>请稍等 正在加载...</Text>
           </SafeAreaView>
       )   
     }
