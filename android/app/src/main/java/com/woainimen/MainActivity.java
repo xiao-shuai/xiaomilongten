@@ -1,4 +1,4 @@
-package com.jintaiyangappguo;
+package com.longtenguanliappm;
 
 import com.facebook.react.ReactActivity;
 import android.os.Bundle; 
